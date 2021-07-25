@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="skin.css">
+    <title>skin</title>
+</head>
+<body>
+    <div id="divao">
+        <div id="skins">
+            <ul>
+                <li> <img src="foto/Ryze_1.jpg" id="s1" alt=""></li>
+                <li> <img src="foto/Ryze_2.jpg" id="s2" alt=""></li>
+                <li> <img src="foto/Ryze_3.jpg" id="s3" alt=""></li>
+                <li> <img src="foto/Ryze_4.jpg" id="s4" alt=""></li>
+                <li> <img src="foto/Ryze_5.jpg" id="s5" alt=""></li>
+                <li> <img src="foto/Ryze_6.jpg" id="s6" alt=""></li>
+                <li> <img src="foto/Ryze_7.jpg" id="s7" alt=""></li>
+                <li> <img src="foto/Ryze_8.jpg" id="s8" alt=""></li>
+                <li> <img src="foto/Ryze_9.jpg" id="s9" alt=""></li>
+                <li> <img src="foto/Ryze_10.jpg" id="s10" alt=""></li>
+                <li> <img src="foto/Ryze_11.jpg" id="s11" alt=""></li>
+                <li> <img src="foto/Ryze_13.jpg" id="s12" alt=""></li>
+            </ul>
+        </div>
+        <div id="so"><img src="foto/Ryze_0.jpg" id="ft" id="s1" alt=""></div> 
+        
+        <div id="nome"> <h1>Ryze</h1></div>
+    </div>
+    <div id="menu">
+        <ul>
+            <a href="index.html"><li>INICO</li></a>
+            <a href="historia.html"><li>HISTÓRIA</li></a>
+            <a href="habilidades.html"><li>HABILIDADES</li></a>
+            <a href="skin.html"><li>SKINS</li></a>
+        </ul>
+    </div> 
+    
+    <script>
+        let skin1 = document.querySelector(`#s1`)
+        let skin2 = document.querySelector(`#s2`)
+        let skin3 = document.querySelector(`#s3`)
+        let skin4 = document.querySelector(`#s4`)
+        let skin5 = document.querySelector(`#s5`)
+        let skin6 = document.querySelector(`#s6`)
+        let skin7 = document.querySelector(`#s7`)
+        let skin8 = document.querySelector(`#s8`)
+        let skin9 = document.querySelector(`#s9`)
+        let skin10 = document.querySelector(`#s10`)
+        let skin11 = document.querySelector(`#s11`)
+        let skin12 = document.querySelector(`#s12`)
+        let ft = document.querySelector(`#ft`)
+        let nome = document.querySelector(`#nome`)
+
+        skin1.addEventListener('click',sk1)
+        skin2.addEventListener('click',sk2)
+        skin3.addEventListener('click',sk3)
+        skin4.addEventListener('click',sk4)
+        skin5.addEventListener('click',sk5)
+        skin6.addEventListener('click',sk6)
+        skin7.addEventListener('click',sk7)
+        skin8.addEventListener('click',sk8)
+        skin9.addEventListener('click',sk9)
+        skin10.addEventListener('click',sk10)
+        skin11.addEventListener('click',sk11)
+        skin12.addEventListener('click',sk12)
+        
+
+
+        function sk1() {
+            document.querySelector(`#ft`).src="foto/Ryze_1.jpg";
+            nome.innerHTML = `<h1>RYZE JOVEM</h1>`
+        }
+        function sk2() {
+            document.querySelector(`#ft`).src="foto/Ryze_2.jpg";
+            nome.innerHTML = `<h1>RYZE TRIBAL</h1>`
+        }
+        function sk3() {
+            document.querySelector(`#ft`).src="foto/Ryze_3.jpg";
+            nome.innerHTML = `<h1>TIO RYZE</h1>`
+        }
+        function sk4() {
+            document.querySelector(`#ft`).src="foto/Ryze_4.jpg";
+            nome.innerHTML = `<h1>RYZE TRIUNFANTE</h1>`
+        }
+        function sk5() {
+            document.querySelector(`#ft`).src="foto/Ryze_5.jpg";
+            nome.innerHTML = `<h1>Mestre Ryze</h1>`
+        }
+        function sk6() {
+            document.querySelector(`#ft`).src="foto/Ryze_6.jpg";
+            nome.innerHTML = `<h1>Ryze Zumbie</h1>`
+        }
+        function sk7() {
+            document.querySelector(`#ft`).src="foto/Ryze_7.jpg";
+            nome.innerHTML = `<h1>Ryze Cristal Negro</h1>`
+        }
+        function sk8() {
+            document.querySelector(`#ft`).src="foto/Ryze_8.jpg";
+            nome.innerHTML = `<h1>Ryze Pirata</h1>`
+        }
+        function sk9() {
+            document.querySelector(`#ft`).src="foto/Ryze_9.jpg";
+            nome.innerHTML = `<h1>Ryze Barba Branca</h1>`
+        }
+        function sk10() {
+            document.querySelector(`#ft`).src="foto/Ryze_10.jpg";
+            nome.innerHTML = `<h1>SKT T1 Ryze</h1>`
+        }
+        function sk11() {
+            document.querySelector(`#ft`).src="foto/Ryze_11.jpg";
+            nome.innerHTML = `<h1>Ryze Campeonato</h1>`
+        }
+        function sk12() {
+            document.querySelector(`#ft`).src="foto/Ryze_13.jpg";
+            nome.innerHTML = `<h1>Ryze Guardião Das Areias</h1>`
+        }
+
+
+    
+    </script>
+</body>
+</html>

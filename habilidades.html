@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="habilidades.css">
+    <link rel="stylesheet" href="habilidades.js">
+    <title>habilidades</title>
+</head>
+<body>
+    <div id="divao">
+        <div id="diva">
+            <div id="esq">
+                <h1>HABILIDADES</h1>
+                <div id="lis">
+                    <ul>
+                        <li id="pass"><img src="foto/Ryze_P.png" alt=""> </li>
+                        <li id="q"><img src="foto/RyzeQWrapper.png" id="qe" alt=""> </li>
+                        <li id="w"><img src="foto/RyzeW.png" alt=""> </li>
+                        <li id="e"><img src="foto/RyzeE.png" alt=""> </li>
+                        <li id="r"><img src="foto/RyzeR.png" alt=""> </li>
+                    </ul>
+                    <div id="infor"> <h4>Passiva</h4><h1>MAESTRIA ARCANA</h1> <p>As habilidades de Ryze causam dano adicional com base em sua Mana adicional. Ele recebe um percentual de aumento de Mana máxima com base em seu Poder de Habilidade.</p></div>
+                </div>
+                
+            </div>
+            <div id="dir"> <video src="foto/passiva.mp4" muted autoplay loop id="ft"></video>
+            </div>
+        </div>
+    </div> 
+    <div id="menu">
+        <ul>
+            <a href="index.html"><li>INICO</li></a>
+            <a href="historia.html"><li>HISTÓRIA</li></a>
+            <a href="habilidades.html"><li>HABILIDADES</li></a>
+            <a href="skin.html"><li>SKINS</li></a>
+        </ul>
+    </div> 
+
+    <script>
+    let p = document.querySelector(`#pass`)
+    let q = document.querySelector(`#q`)
+    let w = document.querySelector(`#w`)
+    let e = document.querySelector(`#e`)
+    let r = document.querySelector(`#r`)
+    let res = document.querySelector(`#dir`)
+    let inf = document.querySelector(`#infor`)
+
+        p.addEventListener('click',c)
+        q.addEventListener('click',c1)
+        w.addEventListener('click',c2)
+        e.addEventListener('click',c3)
+        r.addEventListener('click',c4)
+
+        function c() {
+        document.querySelector(`#ft`).src="foto/passiva.mp4";
+        inf.innerHTML = `<h4>Passiva</h4><h1>MAESTRIA ARCANA</h1> <p>As habilidades de Ryze causam dano adicional com base em sua Mana adicional. Ele recebe um percentual de aumento de Mana máxima com base em seu Poder de Habilidade.</p>`
+        }
+        function c1() {
+        document.querySelector(`#ft`).src="foto/ability_0013_Q1.webm"
+        inf.innerHTML = `<h4>Q</h4><h1>SOBRECARREGAR</h1> <p>Passivamente, as outras habilidades básicas de Ryze redefinem o Tempo de Recarga de Sobrecarregar e carregam uma runa. Quando Ryze conjura Sobrecarregar com 2 runas carregadas, ele recebe um breve surto de Velocidade de Movimento. Ao conjurar, Ryze arremessa uma carga de energia pura em linha reta, causando dano ao primeiro inimigo atingido. Se o alvo estiver afetado por Fluxo, Sobrecarregar causa dano adicional e rebate para inimigos próximos atingidos por Fluxo.</p>`
+        }
+        function c2(){
+        document.querySelector(`#ft`).src="foto/w.webm";
+        inf.innerHTML = `<h4>W</h4><h1>PRISÃO DE RUNA</h1> <p>Ryze prende um alvo em uma prisão de runas, causando dano e reduzindo sua Velocidade de Movimento. Se o alvo estiver afetado por Fluxo, ele é enraizado.</p>`
+        }
+        function c3(){
+        document.querySelector(`#ft`).src="foto/e.webm";
+        inf.innerHTML = `<h4>E</h4><h1>FLUXO DE FEITIÇO</h1> <p>Ryze lança um orbe de puro poder mágico que causa dano a um inimigo e um efeito negativo em todos os inimigos próximos. As habilidades de Ryze têm efeitos adicionais contra a unidade afetada.</p>`
+        }
+        function c4(){
+        document.querySelector(`#ft`).src="foto/r.webm";
+        inf.innerHTML = `<h4>R</h4><h1>PORTAL DE REINOS</h1> <p>Passivamente, Sobrecarregar causa ainda mais dano contra alvos afetados por Fluxo. Ao conjurar, Ryze cria um portal para um local próximo. Após alguns segundos, aliados próximos ao portal são teleportados ao local alvo.</p>`
+        }    
+     
+    </script>
+</body>
+</html>
